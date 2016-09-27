@@ -4,11 +4,14 @@
 		<meta charset="utf-8">
 		<title>Home</title>
 		
-		
-	<style>
-		* { padding: 0; margin: 0; }
+	    <style>
+    		body {
+    			background-color: #1a1a1a;
+			}
+    		
+    		* { padding: 0; margin: 0; }
     		canvas { 
-    			background: #eee; 
+    			background: #000000; 
     			display: block; 
     			margin: 0 auto; 
     		}
@@ -20,33 +23,21 @@
                 width: 700px;
                 height: 500px;
                 position: absolute;
-                top: 90px;
+                top: 50px;
                 bottom: 0;
                 left: 100px;
                 right: 0;
             }
-	
-	body {
-	    height: 965px;   
-	    background: blue; /* For browsers that do not support gradients */
-	    background: -webkit-linear-gradient(lightblue, AntiqueWhite); /* For Safari 5.1 to 6.0 */
-	    background: -o-linear-gradient(lightblue, AntiqueWhite); /* For Opera 11.1 to 12.0 */
-	    background: -moz-linear-gradient(lightblue, AntiqueWhite); /* For Firefox 3.6 to 15 */
-	    background: linear-gradient(lightblue, AntiqueWhite); /* Standard syntax (must be last) */
-	}
-	
-	
-	</style>
-			
+    		
+    	</style>
 	</head>
-	
 	<body>
-		<canvas id="myCanvas" width="480" height="320"></canvas>
+		<canvas id="myCanvas" width="580" height="320"></canvas>
 
 		<script>
 			var canvas = document.getElementById("myCanvas");
 			var ctx = canvas.getContext("2d");
-			var ballRadius = 10;
+			var ballRadius = 6;
 			var x = canvas.width/2;
 			var y = canvas.height-30;
 			var dx = 2;
@@ -56,10 +47,10 @@
 			var paddleX = (canvas.width-paddleWidth)/2;
 			var rightPressed = false;
 			var leftPressed = false;
-			var brickRowCount = 5;
-			var brickColumnCount = 3;
-			var brickWidth = 75;
-			var brickHeight = 20;
+			var brickRowCount = 7;
+			var brickColumnCount = 4;
+			var brickWidth = 65;
+			var brickHeight = 15;
 			var brickPadding = 10;
 			var brickOffsetTop = 30;
 			var brickOffsetLeft = 30;
@@ -122,7 +113,7 @@ document.addEventListener("mousemove", mouseMoveHandler, false);
 			function drawBall() {
 			    ctx.beginPath();
 			    ctx.arc(x, y, ballRadius, 0, Math.PI*2);
-			    ctx.fillStyle = "#0095DD";
+			    ctx.fillStyle = "#F0FFFF";
 			    ctx.fill();
 			    ctx.closePath();
 			}
@@ -211,26 +202,13 @@ document.addEventListener("mousemove", mouseMoveHandler, false);
 draw();
 		</script>
 	</body>
-	
 	<body>
 	 	  <a href="index.html">Index</a>
           <a href="portfolio.html">Portfolio</a>
           <a href="test.html">Test</a>
           <a href="game.html">Game</a>
-          <a href="flappy.html">Flappy</a>
-          <a href="ScratchGame.html">Scratch Game</a>
-		
-		<button onclick="myFunction()">Try it</button>
-		
-		<script>
-		function myFunction() {
-		    alert("Hello!");
-		}
-		</script>		
 
 		<div id="grad1" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold">
-Bella's Home Page!</div>
-
-		<div id="grad1"></div>
+Game!</div>
 	</body>
 </html>
