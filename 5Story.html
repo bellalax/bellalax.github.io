@@ -9,17 +9,81 @@
     			text-align: center;
     			font-size: 180%;
 			}
+			
+			ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+			
+			
 		</style>
 			
 	</head>
 	<body>
-	 	  <a href="index.html">Index</a>
-          <a href="2ScratchGame.html">ScratchGame</a>
-          <a href="3ScratchMovie.html">ScratchMovie</a>
-          <a href="4game.html">Fun</a>
-          <a href="5Story.html">Story</a>
-          <a href="6Song.html">Playlist</a>
-          <a href="7Tkinter.html">Tkinter</a>
+	 	  <ul>
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="5Story.html">Story</a></li>
+			  <li><a href="6Song.html">Song</a></li>
+			  <li class="dropdown">
+    			<a href="#" class="dropbtn1">Tkinter</a>
+			    <div class="dropdown-content">
+    			  <a href="7TkinterCalc.html">Calculator</a>
+    			  <a href="8TkinterRSA.html">RSA</a>
+			  <li class="dropdown">  
+			    <a href="#" class="dropbtn">Scratch</a>
+			    <div class="dropdown-content">
+			      <a href="2ScratchGame.html">Game</a>
+			      <a href="3ScratchMovie.html">Movie</a>
+			    </div>
+			  </li>
+			</ul>
+
           
 		<div id="grad1" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold">
 		Story!</div>
@@ -28,7 +92,7 @@
 <iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://www.lucidchart.com/documents/embeddedchart/e141f829-c753-45e8-8ae4-2263ec2bb722" id="doU0lF8OZb7B"></iframe></div>
 <iframe width=1280 height=798 frameborder="0" scrolling="no" src="//screencast-o-matic.com/embed?sc=cDXVbojKz5&v=5&ff=1" allowfullscreen="true"></iframe>
 <h1>This project wasn't actually that challenging for me. Both my partner and I have previous coding experience, and have both used python in the past as well. We actually split the development of the code in half. He did the last sixty three lines of code, while I did the last sixty eight lines. To produce, and write the overall story, we both contributed our ideas, to improve the overall premise and storyline. I also declaring a death variable that can be referred back to once, so it does not have to be declared every time the player dies. The overall process was both cooperative and independent, such as working on my half of the code. </h1>
-<h1>The story begins  with the player walking up on the beach after an engine on his plane stops working causing the plane to crash land on this mysterious island on the player's way to the United Kingdom for a conference. After waking on the shore of the island inside the crash plane with dead bodies littered all around the player decides it is best to seek food, shelter as well as a way of the island. With this plan, the player decides to roam the island in hopes of accomplishing the plan. Although on the way the player has the decision to either cross a lake surrounded by bins with the toxic logo painted on them in a fire engine red or to find a way around the lake while trying to outrun a  group of bloodthirsty monkeys. Later after outrunning the deranged monkeys the player becomes thirsty and finds a bizarre fruit although when the player cracks it open it's full of a liquid the player comes to the decision to either drink the mystery liquid or not. Later the Player decides to find shelter is the Player's main priority due to the fact the sun is going down. With this new motivation, the Player takes off into the forest  in search and discovers a cave on top of one of the highest mountains. The Player decides to use this cave as his temporary home and sets of to gather wood to start a signal fire to alert any possible search parties looking for any survivors of the plane crash. Only to discover that the island is inhabited with a mad scientist who is enhancing one's ability to use more of their brain with a drug called "BOB". With this find, the Player can decide to either go to the scientist for help off the island or  to remain undetected by the scientist who might decide to use the Player as a human science experiment. Later the scientists discover the Player and inject the Player with "BOB" causing the Player to pass out in pain. Following the injection, the Player walks up left for dead by the scientist who saw the Player's heart stop beating.  With this new knowledge, the Player builds a raft out of the crashed plane and gets rescued the end.   
+<h1>The story begins  with the player walking up on the beach after an engine on his plane stops working causing the plane to crash land on this mysterious island on the player's way to the United Kingdom for a conference. After waking on the shore of the island inside the crash plane with dead bodies littered all around the player decides it is best to seek food, shelter as well as a way of the island. With this plan, the player decides to roam the island in hopes of accomplishing the plan. Although on the way the player has the decision to either cross a lake surrounded by bins with the toxic logo painted on them in a fire engine red or to find a way around the lake while trying to outrun a  group of bloodthirsty monkeys. Later after outrunning the deranged monkeys the player becomes thirsty and finds a bizarre fruit although when the player cracks it open it's full of a liquid the player comes to the decision to either drink the mystery liquid or not. Later the Player decides to find shelter is the Player's main priority due to the fact the sun is going down. With this new motivation, the Player takes off into the forest  in search and discovers a cave on top of one of the highest mountains. The Player decides to use this cave as his temporary home and sets of to gather wood to start a signal fire to alert any possible search parties looking for any survivors of the plane crash. Only to discover that the island is inhabited with a mad scientist who is enhancing one's ability to use more of their brain with a drug called "BOB". With this find, the Player can decide to either go to the scientist for help off the island or  to remain undetected by the scientist who might decide to use the Player as a human science experiment. Later the scientists discover the Player and inject the Player with "BOB" causing the Player to pass out in pain. Following the injection, the Player wakes up left for dead by the scientist who thought the Player's heart stops.  With this new knowledge, the Player builds a raft out of parts from the plane and gets rescued the end.   
 </h1>	
 	
 	
