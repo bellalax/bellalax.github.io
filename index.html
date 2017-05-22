@@ -105,9 +105,10 @@ li.dropdown {
 			    <div class="dropdown-content">
 			      <a href="2ScratchGame.html">Game</a>
 			      <a href="3ScratchMovie.html">Movie</a>
-				    </div>
-				  </li>
-				</ul>
+			    </div>
+			  </li>
+			  <li><a href="9Thunkable.html">Thunkable</a></li>
+			</ul>
 		
 		
 		<canvas id="myCanvas" width="480" height="320"></canvas>
@@ -198,13 +199,13 @@ document.addEventListener("mousemove", mouseMoveHandler, false);
 			function drawPaddle() {
 			    ctx.beginPath();
 			    ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
-			    ctx.fillStyle = "#0095DD";
+			    ctx.strokeStyle = "#0095DD";
 			    ctx.fill();
 			    ctx.closePath();
 			}
 			function drawBricks() {
-			    for(c=0; c<brickColumnCount; c++) {
-			        for(r=0; r<brickRowCount; r++) {
+			    for( c=0 ; c<brickColumnCount; c++) {
+			        for( r=0 ; r<brickRowCount; r++) {
 			            if(bricks[c][r].status == 1) {
 			                var brickX = (r*(brickWidth+brickPadding))+brickOffsetLeft;
 			                var brickY = (c*(brickHeight+brickPadding))+brickOffsetTop;
